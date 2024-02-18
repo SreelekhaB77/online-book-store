@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/SreelekhaB77/bankingsystem-Dockerfile-.git'
+                git branch: 'main', url: 'https://github.com/SreelekhaB77/online-book-store.git'
             }
         }
         
