@@ -13,6 +13,11 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/SreelekhaB77/online-book-store.git'
             }
         }
+        stage('build') {
+            steps {
+                sh 'mvn clean install'
+            }
+        }
         
         stage('Build Docker Image') {
             steps {
